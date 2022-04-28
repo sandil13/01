@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.body{
+			margin: 0px;
+			padding: 0px;
+			background: black;
+		}
+
+		.preload{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.preload span{
+			display: block;
+			height: 15px;
+			width: 15px;
+			background: #fff7f7;
+			margin: 0 7px;
+			border-radius: 10px;
+			animation: 1.2s upDown infinite;
+		}
+
+		.preload span:first-child{
+			animation-delay: .15s;
+		}
+		.preload span:nth-child(2){
+			animation-delay: .3s;
+		}
+		.preload span:nth-child(3){
+			animation-delay: .45s;
+		}
+		.preload span:nth-child(4){
+			animation-delay: .6s;
+		}
+		.preload span:last-child{
+			animation-delay: .75s;
+		}
+
+		@keyframes upDown{
+			0% {
+				height: 15px;
+				background: #fff7f7;
+			}
+			50% {
+				height: 60px;
+				background: #5368ed;
+			}
+			100% {
+				height: 15px;
+				background: #f24441;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="preload">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+<div style="text-align: center; margin-top: 450px;">
+	<h1 style="color: #3b3a3a; font-family: arial; opacity: 0;" class="text">Hello, world!</h1>
+	<h1 style="color: #3b3a3a; font-family: arial; opacity: 0;" class="text1">你好世界！</h1>
+	<h1 style="color: #3b3a3a; font-family: arial; opacity: 0;" class="text2">こんにちは世界！</h1>
+	<h1 style="color: #3b3a3a; font-family: arial; opacity: 0;" class="text3">Bonjour le monde!</h1>
+</div>
+	<script>
+		let pl = document.querySelector(".preload");
+		let txt = document.querySelector(".text");
+		let txt1 = document.querySelector(".text1");
+		let txt2 = document.querySelector(".text2");
+		let txt3 = document.querySelector(".text3");
+
+		function hide(){
+			pl.style.transition = "1s";
+			pl.style.opacity = "0";
+		}
+
+		function superhide(){
+			pl.style.display = "none"
+		}
+
+		function appear(){
+			txt.style.opacity = "1";
+			txt.style.transition = "1s"
+		}
+
+		function hidetxt(){
+			txt.style.transition = "1s";
+			txt.style.opacity = "0";
+		}
+
+		function superhidetxt(){
+			txt.style.display = "none"
+		}
+
+		function appear1(){
+			txt1.style.opacity = "1";
+			txt1.style.transition = "1s"
+		}
+
+		function hidetxt1(){
+			txt1.style.transition = "1s";
+			txt1.style.opacity = "0";
+		}
+
+		function superhidetxt1(){
+			txt1.style.display = "none"
+		}
+
+		function appear2(){
+			txt2.style.opacity = "1";
+			txt2.style.transition = "1s"
+		}
+
+		function hidetxt2(){
+			txt2.style.transition = "1s";
+			txt2.style.opacity = "0";
+		}
+
+		function superhidetxt2(){
+			txt2.style.display = "none"
+		}
+
+		function appear3(){
+			txt3.style.opacity = "1";
+			txt3.style.transition = "1s"
+		}
+
+		function hidetxt3(){
+			txt3.style.transition = "1s";
+			txt3.style.opacity = "0";
+		}
+
+		function superhidetxt3(){
+			txt3.style.display = "none"
+		}
+		setTimeout(hide, 5000);
+		setTimeout(superhide, 6000);
+		setTimeout(appear, 6200);
+		setTimeout(hidetxt, 8200);
+		setTimeout(superhidetxt, 9200);
+		setTimeout(appear1, 9400);
+		setTimeout(hidetxt1, 11400);
+		setTimeout(superhidetxt1, 12400);
+		setTimeout(appear2, 12600);
+		setTimeout(hidetxt2, 14600);
+		setTimeout(superhidetxt2, 15600);
+		setTimeout(appear3, 15800);
+		setTimeout(hidetxt3, 17800);
+		setTimeout(superhidetxt3, 18800);
+	</script>
+</body>
+</html>
